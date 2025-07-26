@@ -32,6 +32,7 @@ The risk score is calculated using a weighted model designed to be clear and jus
     - `interaction_count`: **5%** (Provides context but is the least direct risk measure).
 
 - **Final Scaling:** The resulting 0-1 risk score (where 1 is riskiest) was inverted and scaled to the required **0-1000** range, where a higher score indicates a healthier, safer wallet.
+
   
   `Final Score = (1 - WeightedRiskScore) * 1000`
 
