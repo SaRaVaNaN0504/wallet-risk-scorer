@@ -4,6 +4,7 @@ This repository contains a Python-based tool to score the risk profile of Ethere
 
 ### 1. Data Collection Method
 
+
 - **Source:** Transaction data was fetched directly from the Ethereum blockchain using the Etherscan API (`account txlist` endpoint).
 - **Process:** A Python script (`risk_scorer.py`) iterates through a list of 100 wallet addresses. For each address, the script retrieves its entire transaction history.
 - **Filtering:** The raw transaction list was filtered to isolate only those transactions where the `to` address was a known Compound V2 cToken contract (cETH, cUSDC, cDAI) or the main Compound V3 USDC Market contract. This ensures we only analyze relevant protocol interactions.
@@ -37,3 +38,4 @@ The risk score is calculated using a weighted model designed to be clear and jus
   `Final Score = (1 - WeightedRiskScore) * 1000`
 
 This methodology provides a scalable and transparent system for assessing wallet risk based on demonstrable on-chain behavior.
+
