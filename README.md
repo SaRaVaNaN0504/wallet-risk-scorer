@@ -39,3 +39,10 @@ The risk score is calculated using a weighted model designed to be clear and jus
 
 This methodology provides a scalable and transparent system for assessing wallet risk based on demonstrable on-chain behavior.
 
+---
+
+#### Author: Saravanan
+#### Contact: saro.05.11.04@gmail.com
+#### GitHub: https://github.com/SaRaVaNaN0504/
+
+
